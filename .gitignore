@@ -1,0 +1,31 @@
+# Datasets / reference material
+Dataset/
+Book/
+
+# Environment variables / secrets
+.env
+.env.*
+**/.env
+**/.env.*
+**/key.json
+
+# Large model files
+**/MODEL_FILES/
+
+# Python
+**/venv/
+*.pyc
+**/__pycache__/
+**/flask_session/
+
+# Flutter / Dart generated files
+**/.dart_tool/
+**/build/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+**/firebase-debug.log
