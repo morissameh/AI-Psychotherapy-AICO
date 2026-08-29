@@ -90,6 +90,8 @@ __pycache__/
 **/flask_session/
 
 # Notebook, Hugging Face, and PyTorch caches
+.pytest_cache/
+**/.pytest_cache/
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
 **/.cache/huggingface/
