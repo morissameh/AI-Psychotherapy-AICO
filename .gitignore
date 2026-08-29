@@ -1,21 +1,129 @@
-# Datasets / reference material
-Dataset/
-
-# Environment variables / secrets
+# Environment variables and secret-bearing files
 .env
 .env.*
 **/.env
 **/.env.*
+!.env.example
+!**/.env.example
 **/key.json
+**/credentials.json
+**/*credentials*.json
+**/*service-account*.json
+**/*service_account*.json
+**/*firebase-adminsdk*.json
+**/google-services.json
+**/GoogleService-Info.plist
+**/*api-key*.txt
+**/*api_key*.txt
+**/*secret*.txt
+**/*token*.txt
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
 
-# Large model files
+# Raw datasets and unreviewed source material
+/Dataset/
+/dataset/
+/Datasets/
+/datasets/
+/data/raw/
+/raw-data/
+/raw_datasets/
+/source-material/
+/source_material/
+/*.csv
+/*.tsv
+/*.parquet
+/*.arrow
+/*.jsonl
+/*.ndjson
+
+# Model weights, checkpoints, archives, adapters, and training outputs
+*.safetensors
+**/pytorch_model*.bin
+**/model*.bin
+**/adapter_model*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.gguf
+*.h5
+*.keras
+*.tflite
+*model*.zip
+*model*.tar
+*model*.tar.gz
+*adapter*.zip
+*adapter*.tar
+*adapter*.tar.gz
+*checkpoint*.zip
 **/MODEL_FILES/
+/models/
+**/model_weights/
+**/trained_model*/
+/adapters/
+**/adapter_output/
+**/checkpoints/
+**/training_output/
+**/model_output/
+/output/
+/outputs/
 
-# Python
+# Executables and mobile-builder archives
+*.exe
+*.aia
+*.aix
+
+# Python environments and generated files
+.venv/
+venv/
+env/
+**/.venv/
 **/venv/
-*.pyc
+**/env/
+*.py[cod]
+__pycache__/
 **/__pycache__/
 **/flask_session/
+
+# Notebook, Hugging Face, and PyTorch caches
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+**/.cache/huggingface/
+**/.huggingface/
+**/huggingface/hub/
+**/.cache/torch/
+**/torch/hub/
+**/torch_extensions/
+
+# Raw reports, presentations, and private screenshots
+/Book/
+/book/
+/Reports/
+/reports/
+/Presentations/
+/presentations/
+/Thesis/
+/thesis/
+/Poster/
+/poster/
+/*.pdf
+/*.doc
+/*.docx
+/*.ppt
+/*.pptx
+/private-screenshots/
+/raw-screenshots/
+/screenshots/private/
+/Screenshot*.png
+/Screenshot*.jpg
+/Screenshot*.jpeg
+/WhatsApp Image*.png
+/WhatsApp Image*.jpg
+/WhatsApp Image*.jpeg
 
 # Flutter / Dart generated files
 **/.dart_tool/
@@ -27,4 +135,5 @@ Dataset/
 .DS_Store
 Thumbs.db
 
+# Firebase generated logs
 **/firebase-debug.log
