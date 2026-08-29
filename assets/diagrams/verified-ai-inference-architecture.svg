@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" role="img" aria-labelledby="title desc">
+  <title id="title">Verified AICO AI inference architecture</title>
+  <desc id="desc">Seven-stage flow from user text through prompt formatting, LangChain conversational memory, Falcon-7B, a PEFT LoRA adapter, and the Hugging Face generation pipeline to a generated response.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#0b1b2e"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#60a5fa"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="520" rx="24" fill="url(#background)"/>
+  <circle cx="1450" cy="30" r="190" fill="#2563eb" opacity="0.07"/>
+  <circle cx="120" cy="510" r="180" fill="#14b8a6" opacity="0.05"/>
+
+  <text x="48" y="64" fill="#f8fafc" font-family="Inter, Segoe UI, sans-serif" font-size="32" font-weight="700">Verified AI inference path</text>
+  <text x="48" y="101" fill="#94a3b8" font-family="Inter, Segoe UI, sans-serif" font-size="18">Evidence-supported model flow reconstructed in the clean portfolio repository</text>
+
+  <g fill="none" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M244 268 H258"/>
+    <path d="M462 268 H476"/>
+    <path d="M680 268 H694"/>
+    <path d="M898 268 H912"/>
+    <path d="M1116 268 H1130"/>
+    <path d="M1334 268 H1348"/>
+  </g>
+
+  <g font-family="Inter, Segoe UI, sans-serif" filter="url(#shadow)">
+    <g transform="translate(48 164)">
+      <rect width="196" height="208" rx="18" fill="#111e30" stroke="#2c4563"/>
+      <rect width="196" height="6" rx="3" fill="#38bdf8"/>
+      <circle cx="32" cy="40" r="17" fill="#0c4a6e"/>
+      <text x="32" y="46" text-anchor="middle" fill="#7dd3fc" font-size="16" font-weight="700">01</text>
+      <text x="22" y="104" fill="#f8fafc" font-size="23" font-weight="700">User text</text>
+      <text x="22" y="142" fill="#94a3b8" font-size="16">Input supplied for</text>
+      <text x="22" y="166" fill="#94a3b8" font-size="16">one conversation turn</text>
+    </g>
+    <g transform="translate(266 164)">
+      <rect width="196" height="208" rx="18" fill="#111e30" stroke="#2c4563"/>
+      <rect width="196" height="6" rx="3" fill="#38bdf8"/>
+      <circle cx="32" cy="40" r="17" fill="#0c4a6e"/>
+      <text x="32" y="46" text-anchor="middle" fill="#7dd3fc" font-size="16" font-weight="700">02</text>
+      <text x="22" y="98" fill="#f8fafc" font-size="21" font-weight="700">Prompt</text>
+      <text x="22" y="126" fill="#f8fafc" font-size="21" font-weight="700">formatting</text>
+      <text x="22" y="166" fill="#94a3b8" font-size="16">Role-labelled context</text>
+    </g>
+    <g transform="translate(484 164)">
+      <rect width="196" height="208" rx="18" fill="#111e30" stroke="#2c4563"/>
+      <rect width="196" height="6" rx="3" fill="#2dd4bf"/>
+      <circle cx="32" cy="40" r="17" fill="#134e4a"/>
+      <text x="32" y="46" text-anchor="middle" fill="#5eead4" font-size="16" font-weight="700">03</text>
+      <text x="22" y="94" fill="#f8fafc" font-size="20" font-weight="700">LangChain</text>
+      <text x="22" y="122" fill="#f8fafc" font-size="20" font-weight="700">conversation</text>
+      <text x="22" y="150" fill="#f8fafc" font-size="20" font-weight="700">memory</text>
+      <text x="22" y="181" fill="#94a3b8" font-size="15">Six-turn window</text>
+    </g>
+    <g transform="translate(702 164)">
+      <rect width="196" height="208" rx="18" fill="#111e30" stroke="#2c4563"/>
+      <rect width="196" height="6" rx="3" fill="#818cf8"/>
+      <circle cx="32" cy="40" r="17" fill="#312e81"/>
+      <text x="32" y="46" text-anchor="middle" fill="#a5b4fc" font-size="16" font-weight="700">04</text>
+      <text x="22" y="104" fill="#f8fafc" font-size="22" font-weight="700">Falcon-7B</text>
+      <text x="22" y="136" fill="#f8fafc" font-size="22" font-weight="700">base model</text>
+      <text x="22" y="174" fill="#94a3b8" font-size="15">4-bit model loading</text>
+    </g>
+    <g transform="translate(920 164)">
+      <rect width="196" height="208" rx="18" fill="#111e30" stroke="#2c4563"/>
+      <rect width="196" height="6" rx="3" fill="#c084fc"/>
+      <circle cx="32" cy="40" r="17" fill="#581c87"/>
+      <text x="32" y="46" text-anchor="middle" fill="#d8b4fe" font-size="16" font-weight="700">05</text>
+      <text x="22" y="102" fill="#f8fafc" font-size="22" font-weight="700">PEFT / LoRA</text>
+      <text x="22" y="134" fill="#f8fafc" font-size="22" font-weight="700">adapter</text>
+      <text x="22" y="174" fill="#94a3b8" font-size="15">Local compatible artifact</text>
+    </g>
+    <g transform="translate(1138 164)">
+      <rect width="196" height="208" rx="18" fill="#111e30" stroke="#2c4563"/>
+      <rect width="196" height="6" rx="3" fill="#f59e0b"/>
+      <circle cx="32" cy="40" r="17" fill="#78350f"/>
+      <text x="32" y="46" text-anchor="middle" fill="#fcd34d" font-size="16" font-weight="700">06</text>
+      <text x="22" y="94" fill="#f8fafc" font-size="19" font-weight="700">Hugging Face</text>
+      <text x="22" y="122" fill="#f8fafc" font-size="19" font-weight="700">generation</text>
+      <text x="22" y="150" fill="#f8fafc" font-size="19" font-weight="700">pipeline</text>
+      <text x="22" y="181" fill="#94a3b8" font-size="15">Text generation</text>
+    </g>
+    <g transform="translate(1356 164)">
+      <rect width="196" height="208" rx="18" fill="#111e30" stroke="#2c4563"/>
+      <rect width="196" height="6" rx="3" fill="#4ade80"/>
+      <circle cx="32" cy="40" r="17" fill="#14532d"/>
+      <text x="32" y="46" text-anchor="middle" fill="#86efac" font-size="16" font-weight="700">07</text>
+      <text x="22" y="102" fill="#f8fafc" font-size="22" font-weight="700">Generated</text>
+      <text x="22" y="134" fill="#f8fafc" font-size="22" font-weight="700">response</text>
+      <text x="22" y="174" fill="#94a3b8" font-size="15">Prototype output</text>
+    </g>
+  </g>
+
+  <g transform="translate(48 430)" font-family="Inter, Segoe UI, sans-serif">
+    <rect width="1504" height="50" rx="12" fill="#0e2035" stroke="#223b58"/>
+    <circle cx="26" cy="25" r="6" fill="#38bdf8"/>
+    <text x="44" y="31" fill="#cbd5e1" font-size="16">Verified scope: AI/LLM path only. Historical mobile, Flask, Firebase, and tunnel prototypes are not represented as integrated runtime components.</text>
+  </g>
+</svg>
