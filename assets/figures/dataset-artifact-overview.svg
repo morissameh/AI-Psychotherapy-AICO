@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="850" viewBox="0 0 1600 850" role="img" aria-labelledby="title desc">
+  <title id="title">AICO dataset artifact overview</title>
+  <desc id="desc">The verified training run used 172 examples. Five other inspected or experimental artifacts contained 661, 975, 434, 66, and 1522 records respectively and are not claimed as inputs to the verified run.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#0b1b2e"/>
+    </linearGradient>
+    <linearGradient id="verified" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#064e3b"/>
+      <stop offset="1" stop-color="#0f3d35"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="850" rx="24" fill="url(#background)"/>
+  <circle cx="1450" cy="10" r="230" fill="#0ea5e9" opacity="0.06"/>
+
+  <text x="58" y="68" fill="#f8fafc" font-family="Inter, Segoe UI, sans-serif" font-size="34" font-weight="700">Dataset artifact overview</text>
+  <text x="58" y="108" fill="#94a3b8" font-family="Inter, Segoe UI, sans-serif" font-size="18">Aggregate counts from the source audit — raw data is not distributed</text>
+
+  <g transform="translate(58 158)" font-family="Inter, Segoe UI, sans-serif" filter="url(#shadow)">
+    <rect width="472" height="596" rx="22" fill="url(#verified)" stroke="#34d399" stroke-width="2"/>
+    <rect x="28" y="28" width="170" height="36" rx="18" fill="#10b981"/>
+    <circle cx="49" cy="46" r="7" fill="#ecfdf5"/>
+    <text x="67" y="52" fill="#ecfdf5" font-size="15" font-weight="700">VERIFIED TRAINING INPUT</text>
+    <text x="30" y="198" fill="#d1fae5" font-size="92" font-weight="750">172</text>
+    <text x="30" y="246" fill="#f8fafc" font-size="28" font-weight="700">examples used by the</text>
+    <text x="30" y="283" fill="#f8fafc" font-size="28" font-weight="700">verified training run</text>
+    <line x1="30" y1="326" x2="442" y2="326" stroke="#5eead4" opacity="0.4"/>
+    <text x="30" y="377" fill="#a7f3d0" font-size="18">mental_health_chatbot_dataset</text>
+    <text x="30" y="422" fill="#d1fae5" font-size="17">• One text field</text>
+    <text x="30" y="456" fill="#d1fae5" font-size="17">• 172 distinct rows</text>
+    <text x="30" y="490" fill="#d1fae5" font-size="17">• No blank required values</text>
+    <rect x="30" y="526" width="412" height="44" rx="10" fill="#052e2b" opacity="0.72"/>
+    <text x="48" y="554" fill="#a7f3d0" font-size="15">This is the only verified training dataset.</text>
+  </g>
+
+  <g transform="translate(590 158)" font-family="Inter, Segoe UI, sans-serif">
+    <text x="0" y="28" fill="#f8fafc" font-size="25" font-weight="700">Other inspected / experimental artifacts</text>
+    <text x="0" y="61" fill="#fca5a5" font-size="17" font-weight="700">Not claimed as inputs to the verified training run</text>
+
+    <g transform="translate(0 108)">
+      <text x="0" y="0" fill="#cbd5e1" font-size="17">Mental-health conversational dataset</text>
+      <text x="904" y="0" text-anchor="end" fill="#f8fafc" font-size="20" font-weight="700">661</text>
+      <rect x="0" y="18" width="720" height="26" rx="13" fill="#1e293b"/>
+      <rect x="0" y="18" width="313" height="26" rx="13" fill="url(#bar)"/>
+    </g>
+    <g transform="translate(0 210)">
+      <text x="0" y="0" fill="#cbd5e1" font-size="17">moris_data artifact</text>
+      <text x="904" y="0" text-anchor="end" fill="#f8fafc" font-size="20" font-weight="700">975</text>
+      <rect x="0" y="18" width="720" height="26" rx="13" fill="#1e293b"/>
+      <rect x="0" y="18" width="461" height="26" rx="13" fill="url(#bar)"/>
+    </g>
+    <g transform="translate(0 312)">
+      <text x="0" y="0" fill="#cbd5e1" font-size="17">Psychiatrist / patient dialogues</text>
+      <text x="904" y="0" text-anchor="end" fill="#f8fafc" font-size="20" font-weight="700">434</text>
+      <rect x="0" y="18" width="720" height="26" rx="13" fill="#1e293b"/>
+      <rect x="0" y="18" width="205" height="26" rx="13" fill="url(#bar)"/>
+    </g>
+    <g transform="translate(0 414)">
+      <text x="0" y="0" fill="#cbd5e1" font-size="17">Test data artifact</text>
+      <text x="904" y="0" text-anchor="end" fill="#f8fafc" font-size="20" font-weight="700">66</text>
+      <rect x="0" y="18" width="720" height="26" rx="13" fill="#1e293b"/>
+      <rect x="0" y="18" width="31" height="26" rx="13" fill="url(#bar)"/>
+    </g>
+    <g transform="translate(0 516)">
+      <text x="0" y="0" fill="#cbd5e1" font-size="17">Reddit prompt / completion artifact</text>
+      <text x="904" y="0" text-anchor="end" fill="#f8fafc" font-size="20" font-weight="700">1,522</text>
+      <rect x="0" y="18" width="720" height="26" rx="13" fill="#1e293b"/>
+      <rect x="0" y="18" width="720" height="26" rx="13" fill="url(#bar)"/>
+    </g>
+  </g>
+
+  <g transform="translate(590 786)" font-family="Inter, Segoe UI, sans-serif">
+    <circle cx="7" cy="0" r="7" fill="#10b981"/>
+    <text x="24" y="6" fill="#94a3b8" font-size="15">Verified training use</text>
+    <circle cx="215" cy="0" r="7" fill="#38bdf8"/>
+    <text x="232" y="6" fill="#94a3b8" font-size="15">Inspected artifact count only</text>
+    <text x="904" y="6" text-anchor="end" fill="#64748b" font-size="14">Bars share a 1,522-record scale.</text>
+  </g>
+</svg>

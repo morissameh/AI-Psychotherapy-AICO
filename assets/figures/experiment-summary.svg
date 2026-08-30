@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800" viewBox="0 0 1600 800" role="img" aria-labelledby="title desc">
+  <title id="title">AICO verified experiment summary</title>
+  <desc id="desc">Recorded Falcon-7B fine-tuning configuration: PEFT LoRA, 4-bit NF4, rank 32, 172 examples, 180 steps, learning rate 2e-4, and maximum sequence length 256. Final training loss and runtime are explicitly marked as training-log values, not model-quality evaluation.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#11172b"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="800" rx="24" fill="url(#background)"/>
+  <circle cx="1460" cy="20" r="220" fill="#7c3aed" opacity="0.07"/>
+  <circle cx="80" cy="780" r="180" fill="#0ea5e9" opacity="0.05"/>
+
+  <text x="60" y="66" fill="#f8fafc" font-family="Inter, Segoe UI, sans-serif" font-size="34" font-weight="700">Verified experiment summary</text>
+  <text x="60" y="106" fill="#94a3b8" font-family="Inter, Segoe UI, sans-serif" font-size="18">Recorded configuration and training-log evidence from the graduation research prototype</text>
+
+  <g transform="translate(60 150)" font-family="Inter, Segoe UI, sans-serif" filter="url(#shadow)">
+    <rect width="714" height="380" rx="20" fill="#111e30" stroke="#2f435d"/>
+    <rect width="714" height="7" rx="3" fill="#60a5fa"/>
+    <text x="28" y="50" fill="#93c5fd" font-size="15" font-weight="700">MODEL AND ADAPTATION</text>
+    <g transform="translate(28 82)">
+      <text x="0" y="26" fill="#94a3b8" font-size="17">Model</text>
+      <text x="650" y="26" text-anchor="end" fill="#f8fafc" font-size="24" font-weight="700">Falcon-7B</text>
+      <line x1="0" y1="52" x2="658" y2="52" stroke="#26384f"/>
+      <text x="0" y="91" fill="#94a3b8" font-size="17">Technique</text>
+      <text x="650" y="91" text-anchor="end" fill="#f8fafc" font-size="24" font-weight="700">PEFT / LoRA</text>
+      <line x1="0" y1="117" x2="658" y2="117" stroke="#26384f"/>
+      <text x="0" y="156" fill="#94a3b8" font-size="17">Quantization</text>
+      <text x="650" y="156" text-anchor="end" fill="#f8fafc" font-size="24" font-weight="700">4-bit NF4</text>
+      <line x1="0" y1="182" x2="658" y2="182" stroke="#26384f"/>
+      <text x="0" y="221" fill="#94a3b8" font-size="17">LoRA rank</text>
+      <text x="650" y="221" text-anchor="end" fill="#f8fafc" font-size="24" font-weight="700">32</text>
+      <line x1="0" y1="247" x2="658" y2="247" stroke="#26384f"/>
+      <text x="0" y="286" fill="#94a3b8" font-size="17">LoRA alpha</text>
+      <text x="650" y="286" text-anchor="end" fill="#f8fafc" font-size="24" font-weight="700">32</text>
+    </g>
+  </g>
+
+  <g transform="translate(826 150)" font-family="Inter, Segoe UI, sans-serif" filter="url(#shadow)">
+    <rect width="714" height="380" rx="20" fill="#111e30" stroke="#2f435d"/>
+    <rect width="714" height="7" rx="3" fill="#c084fc"/>
+    <text x="28" y="50" fill="#d8b4fe" font-size="15" font-weight="700">TRAINING CONFIGURATION</text>
+    <g transform="translate(28 82)">
+      <text x="0" y="26" fill="#94a3b8" font-size="17">Training examples</text>
+      <text x="650" y="26" text-anchor="end" fill="#f8fafc" font-size="24" font-weight="700">172</text>
+      <line x1="0" y1="52" x2="658" y2="52" stroke="#26384f"/>
+      <text x="0" y="91" fill="#94a3b8" font-size="17">Training steps</text>
+      <text x="650" y="91" text-anchor="end" fill="#f8fafc" font-size="24" font-weight="700">180</text>
+      <line x1="0" y1="117" x2="658" y2="117" stroke="#26384f"/>
+      <text x="0" y="156" fill="#94a3b8" font-size="17">Learning rate</text>
+      <text x="650" y="156" text-anchor="end" fill="#f8fafc" font-size="24" font-weight="700">2e-4</text>
+      <line x1="0" y1="182" x2="658" y2="182" stroke="#26384f"/>
+      <text x="0" y="221" fill="#94a3b8" font-size="17">Maximum sequence length</text>
+      <text x="650" y="221" text-anchor="end" fill="#f8fafc" font-size="24" font-weight="700">256</text>
+      <line x1="0" y1="247" x2="658" y2="247" stroke="#26384f"/>
+      <text x="0" y="286" fill="#94a3b8" font-size="17">Maximum steps</text>
+      <text x="650" y="286" text-anchor="end" fill="#f8fafc" font-size="24" font-weight="700">180</text>
+    </g>
+  </g>
+
+  <g transform="translate(60 580)" font-family="Inter, Segoe UI, sans-serif">
+    <rect width="1480" height="150" rx="20" fill="#2a1d0b" stroke="#b45309"/>
+    <text x="28" y="38" fill="#fbbf24" font-size="15" font-weight="700">RECORDED TRAINING-LOG VALUES — NOT MODEL-QUALITY EVALUATION</text>
+    <g transform="translate(28 60)">
+      <text x="0" y="26" fill="#fef3c7" font-size="16">Final reported training loss</text>
+      <text x="0" y="62" fill="#f8fafc" font-size="27" font-weight="700">0.020316550058002272</text>
+      <line x1="680" y1="0" x2="680" y2="68" stroke="#92400e"/>
+      <text x="720" y="26" fill="#fef3c7" font-size="16">Recorded runtime</text>
+      <text x="720" y="62" fill="#f8fafc" font-size="27" font-weight="700">2426.9845 seconds</text>
+    </g>
+  </g>
+</svg>

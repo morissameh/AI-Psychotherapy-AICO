@@ -1,0 +1,14 @@
+{
+  "base_model_id": "vilsonrodrigues/falcon-7b-instruct-sharded",
+  "adapter_path": "adapters/falcon-lora-adapter",
+  "device_map": "auto",
+  "load_in_4bit": true,
+  "bnb_4bit_quant_type": "nf4",
+  "bnb_4bit_use_double_quant": true,
+  "bnb_4bit_compute_dtype": "float16",
+  "conversation_window": 6,
+  "max_new_tokens": 512,
+  "temperature": 0.5,
+  "top_p": 0.5,
+  "repetition_penalty": 1.2
+}

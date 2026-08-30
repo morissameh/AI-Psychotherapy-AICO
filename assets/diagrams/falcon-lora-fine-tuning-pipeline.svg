@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="680" viewBox="0 0 1800 680" role="img" aria-labelledby="title desc">
+  <title id="title">Verified Falcon-7B LoRA fine-tuning pipeline</title>
+  <desc id="desc">Seven-stage pipeline from the verified 172-example training dataset through tokenization, Falcon-7B, 4-bit NF4 quantization, PEFT LoRA, and TRL SFTTrainer to a LoRA adapter. Recorded training configuration is shown below.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#10162b"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a78bfa"/>
+    </marker>
+  </defs>
+  <rect width="1800" height="680" rx="24" fill="url(#background)"/>
+  <circle cx="1660" cy="20" r="220" fill="#7c3aed" opacity="0.07"/>
+  <circle cx="110" cy="680" r="210" fill="#0ea5e9" opacity="0.05"/>
+
+  <text x="52" y="66" fill="#f8fafc" font-family="Inter, Segoe UI, sans-serif" font-size="34" font-weight="700">Verified Falcon-7B fine-tuning pipeline</text>
+  <text x="52" y="106" fill="#94a3b8" font-family="Inter, Segoe UI, sans-serif" font-size="18">Parameter-efficient supervised fine-tuning reconstructed from the recorded experiment</text>
+
+  <g fill="none" stroke="#a78bfa" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M270 282 H286"/>
+    <path d="M516 282 H532"/>
+    <path d="M762 282 H778"/>
+    <path d="M1008 282 H1024"/>
+    <path d="M1254 282 H1270"/>
+    <path d="M1500 282 H1516"/>
+  </g>
+
+  <g font-family="Inter, Segoe UI, sans-serif" filter="url(#shadow)">
+    <g transform="translate(50 158)">
+      <rect width="220" height="248" rx="18" fill="#102235" stroke="#28526e"/>
+      <rect width="220" height="7" rx="3" fill="#38bdf8"/>
+      <text x="24" y="54" fill="#7dd3fc" font-size="15" font-weight="700">VERIFIED INPUT</text>
+      <text x="24" y="118" fill="#f8fafc" font-size="46" font-weight="750">172</text>
+      <text x="24" y="154" fill="#f8fafc" font-size="21" font-weight="700">training examples</text>
+      <text x="24" y="195" fill="#94a3b8" font-size="16">Single text field</text>
+      <text x="24" y="220" fill="#94a3b8" font-size="16">No blanks or duplicates</text>
+    </g>
+    <g transform="translate(296 158)">
+      <rect width="220" height="248" rx="18" fill="#111e30" stroke="#334155"/>
+      <rect width="220" height="7" rx="3" fill="#60a5fa"/>
+      <text x="24" y="54" fill="#93c5fd" font-size="15" font-weight="700">PREPARATION</text>
+      <text x="24" y="121" fill="#f8fafc" font-size="25" font-weight="700">Tokenization</text>
+      <text x="24" y="166" fill="#94a3b8" font-size="16">Sequence packing for</text>
+      <text x="24" y="191" fill="#94a3b8" font-size="16">supervised training</text>
+      <text x="24" y="220" fill="#cbd5e1" font-size="15">Maximum length: 256</text>
+    </g>
+    <g transform="translate(542 158)">
+      <rect width="220" height="248" rx="18" fill="#111e30" stroke="#334155"/>
+      <rect width="220" height="7" rx="3" fill="#818cf8"/>
+      <text x="24" y="54" fill="#a5b4fc" font-size="15" font-weight="700">BASE MODEL</text>
+      <text x="24" y="121" fill="#f8fafc" font-size="29" font-weight="700">Falcon-7B</text>
+      <text x="24" y="166" fill="#94a3b8" font-size="16">Causal language model</text>
+      <text x="24" y="191" fill="#94a3b8" font-size="16">loaded for adaptation</text>
+    </g>
+    <g transform="translate(788 158)">
+      <rect width="220" height="248" rx="18" fill="#111e30" stroke="#334155"/>
+      <rect width="220" height="7" rx="3" fill="#2dd4bf"/>
+      <text x="24" y="54" fill="#5eead4" font-size="15" font-weight="700">QUANTIZATION</text>
+      <text x="24" y="115" fill="#f8fafc" font-size="27" font-weight="700">4-bit NF4</text>
+      <text x="24" y="161" fill="#94a3b8" font-size="16">Double quantization</text>
+      <text x="24" y="188" fill="#94a3b8" font-size="16">FP16 compute</text>
+    </g>
+    <g transform="translate(1034 158)">
+      <rect width="220" height="248" rx="18" fill="#111e30" stroke="#334155"/>
+      <rect width="220" height="7" rx="3" fill="#c084fc"/>
+      <text x="24" y="54" fill="#d8b4fe" font-size="15" font-weight="700">ADAPTATION</text>
+      <text x="24" y="113" fill="#f8fafc" font-size="27" font-weight="700">PEFT / LoRA</text>
+      <text x="24" y="161" fill="#94a3b8" font-size="16">Rank: 32</text>
+      <text x="24" y="188" fill="#94a3b8" font-size="16">Alpha: 32</text>
+      <text x="24" y="215" fill="#94a3b8" font-size="16">Dropout: 0.05</text>
+    </g>
+    <g transform="translate(1280 158)">
+      <rect width="220" height="248" rx="18" fill="#111e30" stroke="#334155"/>
+      <rect width="220" height="7" rx="3" fill="#f59e0b"/>
+      <text x="24" y="54" fill="#fcd34d" font-size="15" font-weight="700">TRAINING</text>
+      <text x="24" y="112" fill="#f8fafc" font-size="25" font-weight="700">TRL SFTTrainer</text>
+      <text x="24" y="161" fill="#94a3b8" font-size="16">Batch size: 16</text>
+      <text x="24" y="188" fill="#94a3b8" font-size="16">Grad accumulation: 4</text>
+      <text x="24" y="215" fill="#94a3b8" font-size="16">Optimizer: paged AdamW</text>
+    </g>
+    <g transform="translate(1526 158)">
+      <rect width="220" height="248" rx="18" fill="#12251e" stroke="#2f5f48"/>
+      <rect width="220" height="7" rx="3" fill="#4ade80"/>
+      <text x="24" y="54" fill="#86efac" font-size="15" font-weight="700">OUTPUT ARTIFACT</text>
+      <text x="24" y="112" fill="#f8fafc" font-size="27" font-weight="700">LoRA adapter</text>
+      <text x="24" y="161" fill="#94a3b8" font-size="16">Parameter-efficient</text>
+      <text x="24" y="188" fill="#94a3b8" font-size="16">trained weights</text>
+      <text x="24" y="220" fill="#cbd5e1" font-size="15">Weights not distributed</text>
+    </g>
+  </g>
+
+  <g transform="translate(50 472)" font-family="Inter, Segoe UI, sans-serif">
+    <rect width="1696" height="140" rx="18" fill="#0e2035" stroke="#29415f"/>
+    <text x="24" y="37" fill="#94a3b8" font-size="14" font-weight="700">RECORDED TRAINING CONFIGURATION</text>
+    <g transform="translate(24 59)">
+      <text x="0" y="28" fill="#f8fafc" font-size="24" font-weight="700">32</text>
+      <text x="54" y="27" fill="#94a3b8" font-size="16">LoRA rank</text>
+      <line x1="190" y1="2" x2="190" y2="44" stroke="#334155"/>
+      <text x="224" y="28" fill="#f8fafc" font-size="24" font-weight="700">32</text>
+      <text x="278" y="27" fill="#94a3b8" font-size="16">LoRA alpha</text>
+      <line x1="423" y1="2" x2="423" y2="44" stroke="#334155"/>
+      <text x="457" y="28" fill="#f8fafc" font-size="24" font-weight="700">16</text>
+      <text x="511" y="27" fill="#94a3b8" font-size="16">batch size</text>
+      <line x1="650" y1="2" x2="650" y2="44" stroke="#334155"/>
+      <text x="684" y="28" fill="#f8fafc" font-size="24" font-weight="700">4</text>
+      <text x="714" y="27" fill="#94a3b8" font-size="16">gradient accumulation</text>
+      <line x1="944" y1="2" x2="944" y2="44" stroke="#334155"/>
+      <text x="978" y="28" fill="#f8fafc" font-size="24" font-weight="700">2e-4</text>
+      <text x="1047" y="27" fill="#94a3b8" font-size="16">learning rate</text>
+      <line x1="1192" y1="2" x2="1192" y2="44" stroke="#334155"/>
+      <text x="1226" y="28" fill="#f8fafc" font-size="24" font-weight="700">180</text>
+      <text x="1280" y="27" fill="#94a3b8" font-size="16">max steps</text>
+      <line x1="1415" y1="2" x2="1415" y2="44" stroke="#334155"/>
+      <text x="1449" y="28" fill="#f8fafc" font-size="24" font-weight="700">256</text>
+      <text x="1506" y="27" fill="#94a3b8" font-size="16">sequence length</text>
+    </g>
+  </g>
+</svg>
